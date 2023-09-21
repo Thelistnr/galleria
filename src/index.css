@@ -51,17 +51,20 @@ body{
   width: 100%;
   border-color: #E85500;
 }
-.home .wrap img:hover{
+.home .wrap .tag:hover{
   margin-left: 10px;
   padding-left: 1px;
   box-shadow: 1px 3px 5px rgb(0,0,0,1);
 }
+.home .wrap img{
+  width: 100%;
+}
+.home .wrap button:hover{
+  margin-left: 10px;
+  padding-left: 1px;
+}
 .home .wrap{
   margin: 10px 0;
-}
-.home .wrap div{
-  width: 500px;
-  height: 285.8px;
 }
 
 @media screen and (max-width: 600px) {

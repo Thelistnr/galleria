@@ -5,7 +5,7 @@ import { createContext, useState } from 'react';
 export const logInContext = createContext();
 
 function App() {
-  const[loggedIn, setLoggedIn] = useState(false);
+  const[loggedIn, setLoggedIn] = useState(localStorage.getItem('accessToken') === null ? false : true);
 
   return (
     <logInContext.Provider value={[loggedIn, setLoggedIn]}>
