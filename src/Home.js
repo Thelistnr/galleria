@@ -123,7 +123,27 @@ const Home = () => {
                 ))}
             </div>}
             {items && <div className="wrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'wrap'}}>
-                {items.map((item) => (<div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>))}
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
             </div>}
         </div>
      );
