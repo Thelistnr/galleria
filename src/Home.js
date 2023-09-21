@@ -49,7 +49,6 @@ const Home = () => {
         e.preventDefault();
         signInWithEmailAndPassword(database, email, password)
             .then((data) => {
-                console.log(data._tokenResponse.idToken)
                 localStorage.setItem('accessToken', data._tokenResponse.idToken)
                 setLoggedIn(true)
                 setPop(false)
@@ -123,32 +122,36 @@ const Home = () => {
                 ))}
             </div>}
             {items && <div className="wrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'wrap'}}>
-                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
-                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
-                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
-                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
-                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
-                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
-                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
-                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
-                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
-                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
-                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
-                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
-                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
-                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
-                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
-                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
-                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
-                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
-                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
-                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
-                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', width:'500px', height:'285.8px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
+                <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
             </div>}
         </div>
      );
 }
 
-//{!isPending && }
  
 export default Home;

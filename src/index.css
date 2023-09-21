@@ -59,10 +59,18 @@ body{
 .home .wrap{
   margin: 10px 0;
 }
+.home .wrap div{
+  width: 500px;
+  height: 285.8px;
+}
 
 @media screen and (max-width: 600px) {
   .home .wrap img{
     width: 400px;
+  }
+  .home .wrap div{
+    width: 400px;
+    height: 228.64px;
   }
   .home .nav .navWrap input{
     position: absolute;
@@ -78,12 +86,20 @@ body{
   .home .wrap img{
     width: 350px;
   }
+  .home .wrap div{
+    width: 350px;
+    height: 200.06;
+  }
 
   
 }
 @media screen and (max-width: 340px) {
   .home .wrap img{
     width: 300px;
+  }
+  .home .wrap div{
+    width: 300px;
+    height: 171.48px;
   }
 
   
