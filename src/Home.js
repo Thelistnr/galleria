@@ -121,7 +121,7 @@ const Home = () => {
                     <img src={img.image} alt="" style={{margin:'5px', overflow:'hidden', borderRadius:'20px', maxWidth:'500px', display:'grid', cursor:'pointer'}} onDrag={e => {setPop(true)}}/>
                 ))}
             </div>}
-            {items && <div className="wrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'wrap'}}>
+            {/* {items && <div className="wrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'wrap'}}>
                 <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
                 <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
                 <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
@@ -148,7 +148,7 @@ const Home = () => {
                 <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
                 <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
                 <div style={{margin:'5px', overflow:'hidden', borderRadius:'20px', display:'grid', cursor:'pointer', backgroundColor:'gray'}}></div>
-            </div>}
+            </div>} */}
         </div>
      );
 }
