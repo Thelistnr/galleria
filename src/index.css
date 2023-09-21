@@ -27,7 +27,7 @@ body{
 }
 .home form a{
   text-align: center;
-  color: #E85500;
+  color: #0466f2;
   font-size: small;
   margin: 10px 0;
   display: block;
@@ -38,6 +38,7 @@ body{
   font-size: medium;
   padding: 5px;
   border-radius: 10px;
+  background-color: #0466f2;
 }
 .home form input{
   border: 0;
@@ -46,10 +47,7 @@ body{
   outline: 0;
 }
 .home form .inpt:focus{
-  border: 0;
-  border-bottom: 1px solid #ededed;
-  width: 100%;
-  border-color: #E85500;
+  border-color: #0466f2;
 }
 .home .wrap .tag:hover{
   margin-left: 10px;

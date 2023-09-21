@@ -18,7 +18,7 @@ const SortableData = ({img}) => {
     };
     return (
         
-        <div className="tag" style={style} ref={setNodeRef} {...attributes} {...listeners} key={img.id}><img src={img.image} alt=""/><button className="div" style={{position:'absolute', margin:'5px 10px', padding:'5px', borderRadius:'10px', width:'80px', fontWeight:'600', cursor:'pointer'}}>{img.tag.toUpperCase()}</button></div>
+        <div className="tag" style={style} ref={setNodeRef} {...attributes} {...listeners} key={img.id}><img src={img.image} alt=""/><button className="div" style={{position:'absolute', margin:'5px 10px', padding:'5px', borderRadius:'10px', width:'80px', fontWeight:'600', cursor:'pointer', backgroundColor:'#0466f2'}}>{img.tag.toUpperCase()}</button></div>
     )
 }
 
@@ -30,8 +30,8 @@ const Home = () => {
     const [items, setItems] = useState(data)
     const [password, setPassword] = useState('');
     const [email, setEmail] = useState('');
-    // eslint-disable-next-line
     const [loggedIn, setLoggedIn] = useContext(logInContext);
+
     const handleChange = (e) => {
         setInput(e.target.value) 
     }
@@ -113,7 +113,7 @@ const Home = () => {
                                     <div className="password">
                                         <label/>
                                         <input type="password" placeholder="Password" required
-                                            className="input"
+                                            className="inpt"
                                             value={password}
                                             onChange={(e) => {setPassword(e.target.value)}}
                                         />
@@ -123,7 +123,7 @@ const Home = () => {
                             <button style={{cursor:'pointer'}}>Continue</button>
                             {/* <button disabled style={{backgroundColor: 'gray'}}>Logging in</button> */}
                             <div className="container" style={{backgroundColor:'white', padding:'0', textAlign:'center', borderRadius:'10px', marginTop:'0'}}>
-                                <p style={{display:'flex', justifyContent:'center'}}>Not Signed up yet? <div style={{textDecoration:'none', color:'#e85500', padding:'0 0 0 2px', margin:'0', fontSize:'medium', cursor:'pointer'}} onClick={e => {setSign(true); setSig(false)}}> Sign-Up</div></p>
+                                <p style={{display:'flex', justifyContent:'center'}}>Not Signed up yet? <div style={{textDecoration:'none', color:'#0466f2', padding:'0 0 0 2px', margin:'0', fontSize:'medium', cursor:'pointer'}} onClick={e => {setSign(true); setSig(false)}}> Sign-Up</div></p>
                             </div>
                         </form>
                     </div>}
@@ -143,7 +143,7 @@ const Home = () => {
                                     <div className="password">
                                         <label/>
                                         <input type="password" placeholder="Password" required
-                                            className="input"
+                                            className="inpt"
                                             value={password}
                                             onChange={(e) => {setPassword(e.target.value)}}
                                         />
@@ -153,7 +153,7 @@ const Home = () => {
                             <button style={{cursor:'pointer'}}>Continue</button>
                             {/* <button disabled style={{backgroundColor: 'gray'}}>Logging in</button> */}
                             <div className="container" style={{backgroundColor:'white', padding:'0', textAlign:'center', borderRadius:'10px', marginTop:'0'}}>
-                                <p style={{display:'flex', justifyContent:'center'}}>Signed up already? <div style={{textDecoration:'none', color:'#e85500', padding:'0 0 0 2px', margin:'0', fontSize:'medium', cursor:'pointer'}} onClick={e => {setSig(true); setSign(false)}}> Log-In</div></p>
+                                <p style={{display:'flex', justifyContent:'center'}}>Signed up already? <div style={{textDecoration:'none', color:'#0466f2', padding:'0 0 0 2px', margin:'0', fontSize:'medium', cursor:'pointer'}} onClick={e => {setSig(true); setSign(false)}}> Log-In</div></p>
                             </div>
                         </form>
                     </div>}
