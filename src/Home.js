@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import data from "./data";
 import { useContext, useState } from "react";
 import { logInContext } from "./App";
@@ -27,7 +27,6 @@ const Home = () => {
     const [items, setItems] = useState(data)
     const [password, setPassword] = useState('');
     const [email, setEmail] = useState('');
-    const history = useNavigate();
     // eslint-disable-next-line
     const [loggedIn, setLoggedIn] = useContext(logInContext);
     const handleChange = (e) => {
@@ -48,7 +47,6 @@ const Home = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const data = {email, password}
         signInWithEmailAndPassword(database, email, password)
             .then((data) => {
                 console.log(data._tokenResponse.idToken)
