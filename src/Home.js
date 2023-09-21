@@ -18,7 +18,7 @@ const SortableData = ({img}) => {
     };
     return (
         
-        <div className="tag" style={style} ref={setNodeRef} {...attributes} {...listeners} key={img.id}><img src={img.image} alt=""/><button className="div" style={{position:'absolute', margin:'5px 10px', padding:'5px', borderRadius:'10px', width:'80px', fontWeight:'600'}}>{img.tag.toUpperCase()}</button></div>
+        <div className="tag" style={style} ref={setNodeRef} {...attributes} {...listeners} key={img.id}><img src={img.image} alt=""/><button className="div" style={{position:'absolute', margin:'5px 10px', padding:'5px', borderRadius:'10px', width:'80px', fontWeight:'600', cursor:'pointer'}}>{img.tag.toUpperCase()}</button></div>
     )
 }
 
@@ -162,15 +162,15 @@ const Home = () => {
             {loggedIn && <div className="wrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'wrap'}}>
                 <DndContext collisionDetection={closestCenter} onDragEnd={onDragEnd}>
                     <SortableContext items={data} strategy={horizontalListSortingStrategy}>
-                        {items.filter((item) => {return input.toLowerCase() === '' ? item : item.tag.toLowerCase().includes(input); }).map((img) => (
+                        {items.filter((item) => {return input.toLowerCase() === '' ? item : item.tag.toLowerCase().includes(input.toLowerCase()); }).map((img) => (
                             <SortableData key={img.id} img={img}/>
                         ))}
                     </SortableContext>
                 </DndContext>
             </div>}
             {!loggedIn && <div className="wrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'wrap'}}>
-                {items.filter((item) => {return input.toLowerCase() === '' ? item : item.tag.toLowerCase().includes(input); }).map((img) => (
-                    <div className="tag" style={{margin:'5px', overflow:'hidden', borderRadius:'20px', maxWidth:'500px', display:'grid', cursor:'pointer'}} key={img.id}><img src={img.image} alt="" onDrag={e => {setPop(true)}}/><button className="div" style={{position:'absolute', margin:'5px 10px', padding:'5px', borderRadius:'10px', width:'80px', fontWeight:'600'}}>{img.tag.toUpperCase()}</button></div>
+                {items.filter((item) => {return input.toLowerCase() === '' ? item : item.tag.toLowerCase().includes(input.toLowerCase()); }).map((img) => (
+                    <div className="tag" style={{margin:'5px', overflow:'hidden', borderRadius:'20px', maxWidth:'500px', display:'grid', cursor:'pointer'}} key={img.id}><img src={img.image} alt="" onDrag={e => {setPop(true)}}/><button className="div" style={{position:'absolute', margin:'5px 10px', padding:'5px', borderRadius:'10px', width:'80px', fontWeight:'600', cursor:'pointer'}}>{img.tag.toUpperCase()}</button></div>
                 ))}
             </div>}
             {/* {items && <div className="wrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'wrap'}}>
