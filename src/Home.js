@@ -27,6 +27,7 @@ const Home = () => {
     const [pop, setPop] = useState(false);
     const [sign, setSign] = useState(false);
     const [sig, setSig] = useState(true);
+    const [isPending, setIsPending] = useState(false);
     const [items, setItems] = useState(data)
     const [password, setPassword] = useState('');
     const [email, setEmail] = useState('');
@@ -50,21 +51,24 @@ const Home = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        setIsPending(true)
         signInWithEmailAndPassword(database, email, password)
             .then((data) => {
                 localStorage.setItem('accessToken', data._tokenResponse.idToken)
                 setLoggedIn(true)
                 setPop(false)
                 alert('log-in successfull')
-                
+                setIsPending(false)
             })
             .catch((err) => {
                 alert(err.code)
+                setIsPending(false)
             })
     }
 
     const handleSignSubmit = (e) => {
         e.preventDefault();
+        setIsPending(true)
         createUserWithEmailAndPassword(database, email, password)
             .then((data) => {
                 localStorage.setItem('accessToken', data._tokenResponse.idToken)
@@ -73,9 +77,11 @@ const Home = () => {
                 alert('Sign-up successfull')
                 setSign(false)
                 setSig(true)
+                setIsPending(false)
             })
             .catch((err) => {
                 alert(err.code)
+                setIsPending(false)
             })
     }
 
@@ -120,8 +126,8 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
-                            <button style={{cursor:'pointer'}}>Continue</button>
-                            {/* <button disabled style={{backgroundColor: 'gray'}}>Logging in</button> */}
+                            {!isPending && <button style={{cursor:'pointer'}}>Continue</button>}
+                            {isPending && <button disabled style={{backgroundColor: 'gray'}}>Logging in</button>}
                             <div className="container" style={{backgroundColor:'white', padding:'0', textAlign:'center', borderRadius:'10px', marginTop:'0'}}>
                                 <p style={{display:'flex', justifyContent:'center'}}>Not Signed up yet? <div style={{textDecoration:'none', color:'#0466f2', padding:'0 0 0 2px', margin:'0', fontSize:'medium', cursor:'pointer'}} onClick={e => {setSign(true); setSig(false)}}> Sign-Up</div></p>
                             </div>
@@ -150,8 +156,8 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
-                            <button style={{cursor:'pointer'}}>Continue</button>
-                            {/* <button disabled style={{backgroundColor: 'gray'}}>Logging in</button> */}
+                            {!isPending && <button style={{cursor:'pointer'}}>Continue</button>}
+                            {isPending && <button disabled style={{backgroundColor: 'gray'}}>Signing up</button>}
                             <div className="container" style={{backgroundColor:'white', padding:'0', textAlign:'center', borderRadius:'10px', marginTop:'0'}}>
                                 <p style={{display:'flex', justifyContent:'center'}}>Signed up already? <div style={{textDecoration:'none', color:'#0466f2', padding:'0 0 0 2px', margin:'0', fontSize:'medium', cursor:'pointer'}} onClick={e => {setSig(true); setSign(false)}}> Log-In</div></p>
                             </div>
